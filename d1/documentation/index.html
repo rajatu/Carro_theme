@@ -1,0 +1,1399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>DefOne - Responsive Admin Template - v1.4.0</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Lato' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/icons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            body {
+                padding-top: 50px;
+                position: relative;
+                color: #363636;
+            }
+            p {
+                font-size: 13px;
+                line-height: 22px;
+            }
+            .navbar-inverse {
+                background-color: #353535 !important;
+                border-color: transparent !important;
+            }
+            /* Hide for mobile, show later */
+            .sidebar {
+              display: none;
+            }
+            @media (min-width: 768px) {
+                .sidebar {
+                    position: fixed;
+                    top: 51px;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1000;
+                    display: block;
+                    padding: 20px;
+                    overflow-x: hidden;
+                    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+                    background-color: #FFF;
+                    border-right: 1px solid #eee;
+                }
+            }
+
+            /* Sidebar navigation */
+            .nav-sidebar {
+                margin-right: -21px; /* 20px padding + 1px border */
+                margin-bottom: 20px;
+                margin-left: -20px;
+            }
+            .nav-sidebar {
+                padding: 0px;
+            }
+            .nav-sidebar > li {
+                list-style: none;
+            }
+            .nav-sidebar > .header {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #454545;
+                font-family: "Montserrat";
+                font-weight: 400;
+                padding: 5px 15px;
+            }
+            .nav-sidebar > li > a {
+                font-size: 12px;
+                display: block;
+                padding: 5px 15px;
+                color: #9199AA;
+            }
+            .nav-sidebar > .divider {
+                padding: 10px 15px;
+            }
+            .nav-sidebar > .active > a,
+            .nav-sidebar > .active > a:hover,
+            .nav-sidebar > .active > a:focus {
+                color: #5B9FFA;
+                font-weight: 600;
+                background-color: #fff;
+            }
+            .main {
+                padding: 40px 60px;
+                margin-top: 50px;
+            }
+            .table > tbody > tr > td,
+            .table > thead > tr > th {
+                padding: 15px 20px;
+            }
+            .table > thead > tr > th {
+                color: #888;
+                text-transform: uppercase;
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+            }
+            .table-striped > tbody > tr > td {
+                background-color: #fafafa !important;
+            }
+            .table-striped > tbody > tr:nth-child(2n+1) > td {
+                background-color: #fff !important;
+            }
+            section {
+                padding-top: 70px;
+            }
+            h3 {
+                font-family: "Lato", sans-serif;
+            }
+            @media (min-width: 768px) {
+                .main {
+                    padding: 40px 60px;
+                }
+                .navbar-nav,
+                .navbar-nav>li {
+                    float: none !important;
+                }
+            }
+
+            @media (min-width: 320px) and (max-width: 460px) {
+                .main {
+                    padding: 20px 30px;
+                }
+            }
+            .main .page-header {
+                margin-top: 0;
+                color: #4B5059;
+                font-family: "Lato", sans-serif;
+            }
+            ul.folders > li {
+                list-style: none;
+            }
+            ul.folders > li.folder:before {
+                font-family: "FontAwesome";
+                content: "\f07c";
+                color: #34495e;
+                margin-right: 5px;
+            }
+            ul.folders > li.file:before {
+                font-family: "FontAwesome";
+                content: "\f15b";
+                color: #16a085;
+                margin-right: 5px;
+            }
+            .d-timeline {
+                /*position: relative;*/
+            }
+            .d-timeline li {
+                list-style: none;
+                border-left: 2px solid #bdc3c7;
+                position: relative;
+                padding: 20px;
+                padding-top: 0px;
+                padding-bottom: 15px;
+                line-height: 1.42857143 !important;
+                /* The circle connected with lines */
+            }
+            .d-timeline li:first-of-type {
+                border-left: 2px solid #ecf0f1;
+            }
+            .d-timeline li:nth-of-type(2) {
+                padding-top: 0px !important;
+            }
+            .d-timeline li strong {
+                font-family: "Lato", sans-serif;
+                font-weight: 600;
+                font-size: 10px;
+                color: #444;
+                text-transform: uppercase;
+            }
+            .d-timeline li.warning {
+                border-left-color: #F5AB35 !important;
+            }
+            .d-timeline li.warning .circle {
+                background-color: #F5AB35 !important;
+            }
+            .d-timeline li.info {
+                border-left-color: #3498db !important;
+            }
+            .d-timeline li.info .circle {
+                background-color: #3498db !important;
+            }
+            .d-timeline li.success {
+                border-left-color: #2ecc71 !important;
+            }
+            .d-timeline li.success .circle {
+                background-color: #2ecc71 !important;
+            }
+            .d-timeline li.danger {
+                border-left-color: #F22613 !important;
+            }
+            .d-timeline li.danger .circle {
+                background-color: #F22613 !important;
+            }
+            .d-timeline li img {
+                margin-right: 10px;
+                float: left !important;
+                border-radius: 6px;
+                padding: 1px;
+                border: 1px solid #bbb;
+            }
+            .d-timeline li .circle {
+                position: absolute;
+                display: block;
+                border-radius: 100%;
+                width: 12px;
+                height: 12px;
+                background-color: #ccc;
+                left: -7px;
+            }
+            .d-timeline li .circle:after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+            .d-timeline li .help-block {
+                margin-top: 0px;
+            }
+            .com { color: #93a1a1; }
+            .lit { color: #195f91; }
+            .pun, .opn, .clo { color: #93a1a1; }
+            .fun { color: #dc322f; }
+            .str, .atv { color: #D14; }
+            .kwd, .linenums .tag { color: #5E74BA !important; }
+            .typ, .atn, .dec, .var { color: teal; }
+            .pln { color: #48484c; }
+
+            .prettyprint {
+                padding: 8px !important;
+                border-radius: 0px !important;
+                background-color: #f7f7f9 !important;
+                border: 1px solid #e1e1e8 !important;
+            }
+            .prettyprint.linenums {
+                -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+                 -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+                      box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+            }
+
+            /* Specify class=linenums on a pre to get line numbering */
+            ol.linenums {
+                margin: 0 0 0 0px; /* IE indents via margin-left */
+            } 
+            ol.linenums li {
+                padding-left: 12px;
+                color: #bebec5;
+                line-height: 18px;
+                text-shadow: 0 1px 0 #fff;
+            }
+        </style>
+
+
+        <link rel="stylesheet" href="../assets/css/plugins/select2/select2.css">
+    </head>
+    <body data-spy="scroll" data-target=".sidebar" data-offset="50" onload="prettyPrint();">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="../assets/images/d1-logo.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <ul class="nav navbar-nav nav-sidebar" id="nav-sidebar">
+                        <li class="header">introduction</li>
+                        <li><a href="#getting_started">Getting Started</a></li>
+                        <li><a href="#less">LESS</a></li>
+                        <li><a href="#html_structure">HTML Structure</a></li>
+                        <li><a href="#navbar">Navbar</a></li>
+                        <li><a href="#sidebar">Sidebar</a></li>
+                        <li><a href="#chatbar">Chatbar</a></li>
+                        <li><a href="#browser_support">Browser Support</a></li>
+                        <li class="divider"></li>
+                        <li class="header">API</li>
+                        <li><a href="#api">API Reference</a></li>
+                        <li class="divider"></li>
+                        <li class="header">helpers</li>
+                        <li><a href="#helpers">Helpers</a></li>
+                        <li class="divider"></li>
+                        <li class="header">extras</li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#update">Update</a></li>
+                    </ul>
+                </div>
+                <!-- end: Sidebar -->
+
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="main">
+                    <section id="introduction">
+                        <h1 class="page-header">Introduction</h1>
+                        
+                        <p><strong>DefOne</strong> Admin Template is a premium admin dashboard template with flat design concept merging in a classic style. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. 
+                        It has a huge collection of reusable UI components and integrated with latest jQuery plugins. 
+                        It can be used for all type of web applications like custom admin panel, project management system, admin dashboard, application backend, CMS or CRM.</p>
+                        <p>We are releasing continuous long term updates and many new features will be coming soon in the near future updates. 
+                        Once you purchased <strong>DefOne</strong>, all future updates are free of charge.</p>
+                    </section>
+
+
+                    <section id="getting_started">
+                        <h1 class="page-header">Getting Started</h1>
+
+                        <p>This part of the doc will help you to quick start your project and will you a basic idea about how pages work. For you to get start visit the "html" folder in your download package</p>
+
+                        <h3>What's Included</h3>
+                        
+                        <p>DefOne comes in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations</p>
+
+                        <p>Once you have download the package you will see the following folder structure</p>
+
+                        <h4 style="display: block;margin-top: 30px;">Main folder structure</h4>
+
+                        <ul class="folders">
+                            <li class="folder">/assets</li>
+                            <li class="folder">/documentation</li>
+                            <li class="folder">/html</li>
+                            <li class="folder">/php</li>
+                        </ul>
+
+                        <p>Folder <code>/assets</code> contains all the common resourses this theme needs</p>
+
+                        <p>Folder <code>/documentation</code> contains this documentation and its resourses</p>
+
+                        <p>Folder <code>/html</code> contains all the compiled HTML pages which comes with <strong>DefOne</strong></p>
+
+                        <p>Folder <code>/php</code> contains configuration file and the PHP Templating engine, for you to use if your next project is in PHP Language.</p>
+
+                        <h4 style="display: block;margin-top: 30px;">Main folder structure (expanded)</h4>
+
+                        <ul class="folders">
+                            <li class="folder">/assets
+                                <ul class="folders">
+                                    <li class="folder">/css</li>
+                                    <li class="folder">/icons
+                                        <ul class="folders">
+                                            <li class="folder">/font-awesome</li>
+                                            <li class="folder">/ionicons-2.0.1</li>
+                                            <li class="folder">/themify</li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder">/images
+                                        <ul class="folders">
+                                            <li class="folder">/carousels</li>
+                                            <li class="folder">/pack</li>
+                                            <li class="folder">/people
+                                                <ul class="folders">
+                                                    <li class="folder">/25x25</li>
+                                                    <li class="folder">/50x50</li>
+                                                    <li class="folder">/65x65</li>
+                                                    <li class="folder">/x2</li>
+                                                </ul>
+                                            </li>
+                                            <li class="folder">/photos</li>
+                                            <li class="file">*.jpg</li>
+                                            <li class="file">*.png</li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder">/js
+                                        <ul class="folders">
+                                            <li class="folder">/demo
+                                                <ul class="folders">
+                                                    <li class="file">*.js</li>
+                                                </ul>
+                                            </li>
+                                            <li class="folder">/plugins
+                                                <ul class="folders">
+                                                    <li class="folder">/*</li>
+                                                </ul>
+                                            </li>
+                                            <li class="file">*.js</li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder">/less
+                                        <ul class="folders">
+                                            <li class="folder">/modules</li>
+                                            <li class="folder">/styles</li>
+                                            <li class="file">*.less</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="folder">/documentation
+                                <ul class="folders">
+                                    <li class="folder">/assets</li>
+                                    <li class="file">index.php</li>
+                                </ul>
+                            </li>
+                            <li class="folder">/html
+                                <ul class="folders">
+                                    <li class="file">*.html</li>
+                                </ul>
+                            </li>
+                            <li class="folder">/php
+                                <ul class="folders">
+                                    <li class="folder">/pages</li>
+                                    <li class="file">config.php</li>
+                                    <li class="file">footer.php</li>
+                                    <li class="file">header.php</li>
+                                    <li class="file">index.php</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+
+                    <section id="less">
+                        <h1 class="page-header" id="less">LESS</h1>
+
+                        <p>Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions. <strong>DefOne</strong> supports Less and is pure built on top of Less</p>
+
+                        <p>Less Files are found under <code>d1-v1.4.0/assets/less</code> respectivly <code>d1-v1.4.0/assets/less/modules</code></p>
+
+                        <h3>Modules</h3>
+
+                        <p>The seperation of modules help you to remove whats not necessary and build your own custom <strong>DefOne</strong> css</p>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Name</th>
+                                    <th width="80%">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>layout.less</td>
+                                    <td>The core layout styles for <strong>DefOne</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>panels.less</td>
+                                    <td>Bootstrap Panels over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>buttons.less</td>
+                                    <td>Bootstrap Button over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>alerts.less</td>
+                                    <td>Bootstrap Alert messages over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>badges.less</td>
+                                    <td>Bootstrap Badges messages over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>labels.less</td>
+                                    <td>Bootstrap Labels messages over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>calendar.less</td>
+                                    <td>Fullcalendar script styles to fit in <strong>DefOne</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>cards.less</td>
+                                    <td>Card widgets styles</td>
+                                </tr>
+                                <tr>
+                                    <td>carousels.less</td>
+                                    <td>Bootstrap Carousel over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>collapsible.less</td>
+                                    <td>Bootstrap Collapsible over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>dropdown.less</td>
+                                    <td>Bootstrap Dropdowns over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>d-timeline.less</td>
+                                    <td><span class="label label-info">NEW</span> Timeline exclusively written for <strong>DefOne</strong> Admin Theme</td>
+                                </tr>
+                                <tr>
+                                    <td>easy-pie.less</td>
+                                    <td>Easy Pie over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>errors.less</td>
+                                    <td>Error classes</td>
+                                </tr>
+                                <tr>
+                                    <td>fleet.less</td>
+                                    <td>Style for the Fleet Management Pages</td>
+                                </tr>
+                                <tr>
+                                    <td>icons.less</td>
+                                    <td>ICONS over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>jumbotron.less</td>
+                                    <td>Bootstrap's Jumbotron over-written class</td>
+                                </tr>
+                                <tr>
+                                    <td>lists.less</td>
+                                    <td>Bootstrap lists over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>login.less</td>
+                                    <td>Classes for login, register and error pages</td>
+                                </tr>
+                                <tr>
+                                    <td>mail.less</td>
+                                    <td>Mail demonstration page classes</td>
+                                </tr>
+                                <tr>
+                                    <td>mega-menu.less</td>
+                                    <td>Mega Menu classes</td>
+                                </tr>
+                                <tr>
+                                    <td>modal.less</td>
+                                    <td>Bootstrap Modal over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>navbar.less</td>
+                                    <td>Navbar classes w/ Bootstrap Navbar over-written classes to fit the theme</td>
+                                </tr>
+                                <tr>
+                                    <td>notifications.less</td>
+                                    <td>Notification classes for alerts on <strong>DefOne</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>pagination.less</td>
+                                    <td>Pagination elements classes</td>
+                                </tr>
+                                <tr>
+                                    <td>pricing_tables.less</td>
+                                    <td>The core layout styles for <strong>DefOne</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>progress-bar.less</td>
+                                    <td>Bootstrap Progress Bars over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>select2.less</td>
+                                    <td>Select2 plugin over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>sidebar-right.less</td>
+                                    <td>Classes for the Chatbar on the right</td>
+                                </tr>
+                                <tr>
+                                    <td>sliders.less</td>
+                                    <td>Sliders plugins over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>summernote.less</td>
+                                    <td>Summernote WYSIWYG Editor over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>switchery.less</td>
+                                    <td>Switchery Plugin over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>tabs.less</td>
+                                    <td>Bootstrap Tabs over-written classes</td>
+                                </tr>
+                                <tr>
+                                    <td>timeline.less</td>
+                                    <td>Simple timeline classes</td>
+                                </tr>
+                                <tr>
+                                    <td>wells.less</td>
+                                    <td>Bootstrap Wells over-written class</td>
+                                </tr>
+                                <tr>
+                                    <td>widgets.less</td>
+                                    <td><strong>DefOne</strong> widgets classes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+
+                    <section id="html_structure">
+                        <h1 class="page-header">HTML Structure</h1>
+
+                        <p>To see the minimal requirments and the HTML Structure of the default document to start up your project please refer to this page <a href="../html/blank.html">blank.html</a></p>
+                        <p>As per a little introduction on the markup you need to start a project without any scripts or css here is a sample</p>
+
+                        <pre class="prettyprint linenums">
+                            
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;
+    &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=9; IE=8; IE=7; IE=EDGE&quot; /&gt;
+
+    &lt;title&gt;...&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body &gt;
+    &lt;div id=&quot;wrapper&quot;&gt;  
+        &lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot; role=&quot;navigation&quot; style=&quot;margin-bottom: 0;&quot;&gt;
+            ...
+        &lt;/nav&gt;
+
+
+        &lt;nav id=&quot;menu&quot; class=&quot;navbar-default navbar-fixed-side hidden-xs&quot; role=&quot;navigation&quot;&gt;
+            ...
+        &lt;/nav&gt;
+
+        
+        &lt;div id=&quot;page-wrapper&quot; class=&quot;fixed-navbar &quot;&gt;
+            ...
+        &lt;/div&gt;
+
+        &lt;div class=&quot;sidebar-right&quot;&gt;
+            ...
+        &lt;/div&gt;
+
+        &lt;footer &gt;
+            ...
+        &lt;/footer&gt;
+                
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;                        </pre>
+
+                        <p>Here is the list of markup descriptions you will need</p>
+                        <ol>
+                            <li>The <code>&lt;div id=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code> is mandatory for any page</li>
+                            <li>The <code>&lt;nav&gt;...&lt;/nav&gt;</code> is the top navigation container in wich you will need to insert the default <a href="http://getbootstrap.com/components/#navbar" target="_blank">Bootstrap Navbar</a> which is explained in the <a href="#navbar">Navbar Section</a></li>
+                            <li>The second <code>&lt;nav&gt;...&lt;/nav&gt;</code> container is the sidebar which is explained in the <a href="#sidebar">Sidebar Section</a> of this document.</li>
+                            <li>In the <code>&lt;div id="page-wrapper"&gt;...&lt;/div&gt;</code> container is the main page where the content goes if you decide to use the fixed Navbar you have to add the class <code>fixed-navbar</code> to the page-wrapper</li>
+                            <li>The <code>&lt;div class="sidebar-right"&gt;...&lt;/div&gt;</code> where the <a href="#chatbar">Chatbar</a> goes</li>
+                        </ol>
+                    </section>
+                    
+
+                    <section id="navbar">
+                        <h1 class="page-header">Navbar</h1>
+
+                        <p>The TOP navbar stand by 2 types fixed and static. For the fixed one you'll need to add a class <code>navbar-fixed-top</code> and for the static one <code>navbar-static-top</code> by default is a fixed navbar</p>
+
+<pre class="prettyprint linenums">
+&lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+    ...
+&lt;/nav&gt;</pre>
+
+                        <h4 style="display: block;margin-top: 30px;">Mega Menu</h4>
+
+                        <p>If you want to add a mega menu to the navbar add it in the:</p>
+
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;nav navbar-top-links navbar-left mega-menu hidden-xs hidden-sm&quot;&gt;...&lt;/ul&gt;</pre>
+                        <p>notice the <code>mega-menu</code> class above? we need it to attach a mega menu to the navbar, let's continue...</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+        ...
+    &lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu mega-menu&quot;&gt;
+        ....
+    &lt;/div&gt;
+&lt;/li&gt;</pre>
+
+                        <p>and that was how we attach a mega menu to the navbar.</p>
+
+                        <h4 style="display: block;margin-top: 30px;">Dropdown elements explained</h4>
+                        <p>We append <code>navbar-right</code> list to the navbar in which we will put our dropdowns</p>
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;nav navbar-top-links navbar-right&quot;&gt;...&lt;/ul&gt;</pre>
+                        <p>For example the notifications dropdown with our timeline implementation in it:</p>
+<pre class="prettyprint linenums">
+&lt;li class=&quot;dropdown&quot;&gt;
+    &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+        ...
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu dropdown-alerts d-timeline&quot;&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li class=&quot;info&quot;&gt;
+            &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;stacked-text&quot;&gt;
+                &lt;i class=&quot;fa fa-comment fa-fw&quot;&gt;&lt;/i&gt; New Comment by &lt;a href=&quot;&quot;&gt;Jim Barnes&lt;/a&gt; on a photo of you
+                &lt;small class=&quot;help-block text-muted&quot;&gt;4 minutes ago&lt;/small&gt;
+            &lt;/span&gt;
+        &lt;/li&gt;
+        ...
+        &lt;li class=&quot;...&quot;&gt;....&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/li&gt;</pre>
+                        <p><span class="label label-info">NOTICE</span> that on the <code>ul</code> element we have classes <code>dropdown-alerts</code> and <code>d-timeline</code> (timeline usage explained <a href="#timeline">here</a>)</p>
+
+                    </section>
+
+                    <section id="sidebar">
+                        <h1 class="page-header">Sidebar</h1>
+
+                        <p>Let's get to know our sidebar, here are te minimal HTML requirments to add a sidebar to this template:</p>
+
+<pre class="prettyprint linenums">
+&lt;nav id=&quot;menu&quot; class=&quot;navbar-default navbar-fixed-side hidden-xs&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;sidebar-collapse&quot;&gt;
+        &lt;ul class=&quot;nav&quot; id=&quot;side-menu&quot;&gt;
+            &lt;li class=&quot;sidebar-user&quot;&gt;
+                &lt;div class=&quot;user-img&quot;&gt;
+                    &lt;img src=&quot;images/people/65x65/1.jpg&quot; alt=&quot;&quot; data-src=&quot;images/people/65x65/1.jpg&quot; data-src-retina=&quot;images/people/x2/1x2.jpg&quot; width=&quot;65&quot; height=&quot;65&quot; class=&quot;img-responsive img-circle&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;user-info&quot;&gt;
+                    &lt;div class=&quot;user-greet&quot;&gt;Welcome&lt;/div&gt;
+                    &lt;div class=&quot;user-name&quot;&gt;Jonathan Doe&lt;/div&gt;
+                    &lt;div class=&quot;user-status&quot;&gt;
+                        &lt;span class=&quot;label label-success dropdown-toggle&quot;&gt;Online&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;sidebar-search&quot;&gt;
+                &lt;div class=&quot;input-group custom-search-form&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Quick Search...&quot;&gt;
+                    &lt;span class=&quot;input-group-btn&quot;&gt;
+                        &lt;button class=&quot;btn btn-inverse&quot; type=&quot;button&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+                &lt;!-- /input-group --&gt;
+            &lt;/li&gt;
+            
+            
+            &lt;li&gt;
+                &lt;a href=&quot;&quot;&gt;&lt;i class=&quot;fa fa-desktop fa-fw&quot;&gt;&lt;/i&gt; Dashboard&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-wrench fa-fw&quot;&gt;&lt;/i&gt; UI Components &lt;span class=&quot;fa arrow&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;ul class=&quot;nav nav-second-level&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&quot;&quot;&gt;Panels and Wells &lt;span class=&quot;label label-info pull-right&quot;&gt;+10&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- /.nav-second-level --&gt;
+            &lt;/li&gt;
+            
+            ...
+
+            &lt;li&gt;&lt;/li&gt;
+            
+        &lt;/ul&gt;
+        &lt;!-- /#side-menu --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.sidebar-collapse --&gt;
+
+    &lt;ul class=&quot;sidebar-stats&quot;&gt;
+        &lt;li class=&quot;margin left right&quot;&gt;
+            &lt;h5&gt;summary&lt;/h5&gt;
+        &lt;/li&gt;
+        ...
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+
+&lt;/nav&gt;</pre>
+
+                        <p>For each activated element in the list add class <code>active</code> to the <code>li</code> element</p>
+
+                        <p>If needed a multi-level navigation add an <code>ul</code> element inside the <code>li</code> element with these classes <code>nav nav-second-level</code></p>
+
+                    </section>
+
+                    <section id="chatbar">
+                        <h1 class="page-header">Chatbar</h1>
+
+                        <p>How the chatbar is added to the theme</p>
+
+<pre class="prettyprint linenums">
+&lt;!-- Side Bar Chat &amp; Mail &amp; History &amp; Settings --&gt;
+&lt;div class=&quot;sidebar-right&quot;&gt;
+    &lt;!-- Nav tabs --&gt;
+    &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#chat&quot; data-toggle=&quot;tab&quot;&gt;&lt;i class=&quot;fa fa-comments&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#inbox&quot; data-toggle=&quot;tab&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#history&quot; data-toggle=&quot;tab&quot;&gt;&lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;sidebar-right-search&quot;&gt;
+        &lt;div class=&quot;input-group&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Quick Search...&quot;&gt;
+            &lt;span class=&quot;input-group-btn&quot;&gt;
+                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;Go!&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;&lt;!-- /input-group --&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Tab panes --&gt;
+    &lt;div class=&quot;tab-content&quot;&gt;
+        &lt;!-- Chat Content --&gt;
+        &lt;div class=&quot;tab-pane fade in active inner-all&quot; id=&quot;chat&quot;&gt;
+            &lt;h5 class=&quot;sidebar-title&quot;&gt;online friends &lt;span class=&quot;label label-success pull-right&quot;&gt;5&lt;/span&gt;&lt;/h5&gt;
+            &lt;ul class=&quot;chat-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;div class=&quot;media&quot;&gt;
+                            &lt;div class=&quot;media-left&quot;&gt;
+                                &lt;img class=&quot;(WARNING|INFO|SUCCESS|DANGER)&quot; alt=&quot;&quot; src=&quot;../assets/images/people/50x50/1.jpg&quot; class=&quot;media-object&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;span class=&quot;time&quot;&gt;...time or date...&lt;/span&gt;
+                                &lt;span class=&quot;name&quot;&gt;...name...&lt;/span&gt;
+                                &lt;span class=&quot;message&quot;&gt;...message...&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                ...
+                &lt;li&gt;...&lt;/li&gt;
+            &lt;/ul&gt;
+            ...
+        &lt;/div&gt;
+        &lt;!-- End of Chat Content --&gt;
+        &lt;div class=&quot;tab-pane fade inner-all&quot; id=&quot;inbox&quot;&gt;
+            &lt;h5 class=&quot;sidebar-title&quot;&gt;inbox &lt;span class=&quot;label label-success pull-right&quot;&gt;5&lt;/span&gt;&lt;/h5&gt;
+            &lt;ul class=&quot;inbox-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;media&quot;&gt;
+                        &lt;span class=&quot;label label-success pull-left&quot;&gt;...&lt;/span&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;strong&gt;Eileen Sideways&lt;/strong&gt;
+                            &lt;small&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. &lt;/small&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                ...
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tab-pane fade inner-all&quot; id=&quot;history&quot;&gt;
+            &lt;h5 class=&quot;sidebar-title&quot;&gt;Latest conversations &lt;span class=&quot;label label-success pull-right&quot;&gt;5&lt;/span&gt;&lt;/h5&gt;
+            &lt;ul class=&quot;chat-list&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot;&gt;
+                        &lt;div class=&quot;media&quot;&gt;
+                            &lt;div class=&quot;media-left&quot;&gt;
+                                &lt;img class=&quot;(WARNING|INFO|SUCCESS|DANGER)&quot; alt=&quot;&quot; src=&quot;../assets/images/people/50x50/1.jpg&quot; class=&quot;media-object&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;span class=&quot;time&quot;&gt;...time or date...&lt;/span&gt;
+                                &lt;span class=&quot;name&quot;&gt;...name...&lt;/span&gt;
+                                &lt;span class=&quot;message&quot;&gt;...message...&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                ...
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End of Sidebar Right --&gt;</pre>
+
+                    </section>
+
+
+                    <section id="browser_support">
+                        <h1 class="page-header">Browser Support</h1>
+
+                        <p><strong>DefONe</strong> is built keeping mind to support a wide range of browsers and devices. We all major browers Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                        <th>Chrome</th>
+                                        <th>Firefox</th>
+                                        <th>Internet Explorer</th>
+                                        <th>Opera</th>
+                                        <th>Safari</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Android</th>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-muted text-center" rowspan="3" style="vertical-align: middle;">N/A</td>
+                                        <td class="text-danger"><span class="fa fa-fw fa-remove"></span> Not Supported</td>
+                                        <td class="text-muted">N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <th>iOS</th>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-muted text-center">N/A</td>
+                                        <td class="text-danger"><span class="fa fa-fw fa-remove"></span> Not Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mac OS X</th>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Windows</th>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-success"><span class="fa fa-fw fa-check"></span> Supported</td>
+                                        <td class="text-danger"><span class="fa fa-fw fa-remove"></span> Not Supported</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </section>
+                    
+
+
+
+                    <section id="api">
+                        <h1 class="page-header">API Reference</h1>
+
+                        <h4>Auto-initialized jQuery Plugins</h4>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Plugin</th>
+                                        <th>Implementation</th>
+                                        <th>example</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstrap Tooltips</a></td>
+                                        <td>
+                                            <p>Add attribute <code>[data-toggle="tooltip"]</code> to any element.</p>
+<pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Print&quot;&gt;
+    &lt;i class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</pre>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" data-toggle="tooltip" data-placement="bottom" title="Print"><i class="fa fa-print"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://getbootstrap.com/javascript/#popovers" target="_blank">Bootstrap Popovers</a></td>
+                                        <td>
+                                            <p>Add attribute <code>[data-toggle="popover"]</code> to any element.</p>
+<pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; 
+    data-content=&quot;And here&#039;s some amazing content. 
+    It&#039;s very engaging. Right?&quot; 
+    title=&quot;Print&quot;&gt;
+    &lt;i class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</pre>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" data-toggle="popover" data-placement="bottom" title="Print" data-content="And here's some amazing content. It's very engaging. Right?"><i class="fa fa-print"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Select2
+                                        </td>
+                                        <td>
+                                            <p>Add attribute <code>[data-toggle="select2"]</code> to any <code>select</code> element.</p>
+                                        </td>
+                                        <td>
+                                            <select style="width:100%" data-toggle="select2">
+                       <optgroup label="Alaskan/Hawaiian Time Zone">
+                           <option value="AK">Alaska</option>
+                           <option value="HI">Hawaii</option>
+                       </optgroup>
+                       <optgroup label="Pacific Time Zone">
+                           <option value="CA">California</option>
+                           <option value="NV">Nevada</option>
+                           <option value="OR">Oregon</option>
+                           <option value="WA">Washington</option>
+                       </optgroup>
+                       <optgroup label="Mountain Time Zone">
+                           <option value="AZ">Arizona</option>
+                           <option value="CO">Colorado</option>
+                           <option value="ID">Idaho</option>
+                           <option value="MT">Montana</option><option value="NE">Nebraska</option>
+                           <option value="NM">New Mexico</option>
+                           <option value="ND">North Dakota</option>
+                           <option value="UT">Utah</option>
+                           <option value="WY">Wyoming</option>
+                       </optgroup>
+                       <optgroup label="Central Time Zone">
+                           <option value="AL">Alabama</option>
+                           <option value="AR">Arkansas</option>
+                           <option value="IL">Illinois</option>
+                           <option value="IA">Iowa</option>
+                           <option value="KS">Kansas</option>
+                           <option value="KY">Kentucky</option>
+                           <option value="LA">Louisiana</option>
+                           <option value="MN">Minnesota</option>
+                           <option value="MS">Mississippi</option>
+                           <option value="MO">Missouri</option>
+                           <option value="OK">Oklahoma</option>
+                           <option value="SD">South Dakota</option>
+                           <option value="TX">Texas</option>
+                           <option value="TN">Tennessee</option>
+                           <option value="WI">Wisconsin</option>
+                       </optgroup>
+                       <optgroup label="Eastern Time Zone">
+                           <option value="CT">Connecticut</option>
+                           <option value="DE">Delaware</option>
+                           <option value="FL">Florida</option>
+                           <option value="GA">Georgia</option>
+                           <option value="IN">Indiana</option>
+                           <option value="ME">Maine</option>
+                           <option value="MD">Maryland</option>
+                           <option value="MA">Massachusetts</option>
+                           <option value="MI">Michigan</option>
+                           <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                           <option value="NY">New York</option>
+                           <option value="NC">North Carolina</option>
+                           <option value="OH">Ohio</option>
+                           <option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option>
+                           <option value="VT">Vermont</option><option value="VA">Virginia</option>
+                           <option value="WV">West Virginia</option>
+                       </optgroup>
+                    </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+
+                        <p><span class="label label-info">NEW</span> To change the background image and style of the page heading add attributes:</p>
+                        <p><code>[data-background="/path/to/background/image"]</code> to add a background image to it</p>
+                        <p><code>[data-text-color="#FFFFFF"]</code> to change the text color on the <code>page-heading</code> (if the background is to dark and the default text color is not visible enough)</p>
+                        <p><code>[data-text-shadow]</code> to add a shadow to the text</p>
+                    </section>
+                    
+
+                    <section id="helpers">
+                        <h1 class="page-header">Helpers</h1>
+
+                        <p>Below we explain how the Helper Classes work wich you can find here: <code>/assets/less/helpers.less</code></p>
+
+                        <h4 style="display: block;margin-top: 30px;">Margin</h4>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>FIRST PART</th>
+                                    <th>SECOND PART</th>
+                                    <th>LAST PART</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>m for margin</td>
+                                    <td>t for top; b for bottom; l for left; r for right</td>
+                                    <td>0, 5, 10,...,90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <strong style="display: block;margin-top: 30px;">Example:</strong>
+                        <p>
+                            <code>m-t-15</code> wich means Margin Top 15px<br />
+                            <code>m-l-40</code> wich means Margin Left 40px<br />
+                        </p>
+                        <strong style="display: block;margin-top: 30px;">Rule:</strong>
+                        <p>
+                            Value can not be anything, 1,2,4,5,...,9. It has a step of 5px, eg: 5,10,15,...,90
+                        </p>
+                        <strong style="display: block;margin-top: 30px;">Other options</strong>
+                        <p>
+                            To remove padding from a HTML element add the class <code>no-margin</code> or use the <code>m-(l|r|t|b)-0</code>
+                        </p>
+
+                        <h4 style="display: block;margin-top: 30px;">Padding</h4>
+
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>FIRST PART</th>
+                                    <th>SECOND PART</th>
+                                    <th>LAST PART</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p for padding</td>
+                                    <td>t for top; b for bottom; l for left; r for right</td>
+                                    <td>0, 5, 10,...,90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <strong style="display: block;margin-top: 30px;">Example:</strong>
+                        <p>
+                            <code>p-b-10</code> wich means Padding Bottom 10px<br />
+                            <code>p-r-90</code> wich means Padding Right 90px<br />
+                        </p>
+                        <strong style="display: block;margin-top: 30px;">Rule:</strong>
+                        <p>
+                            Value can not be anything, 1,2,4,5,...,9. It has a step of 5px, eg: 5,10,15,...,90
+                        </p>
+                        <strong style="display: block;margin-top: 30px;">Other options</strong>
+                        <p>
+                            To remove padding from a HTML element add the class <code>no-padding</code> or use the <code>p-(l|r|t|b)-0</code>
+                        </p>
+
+                        <h4 style="display: block;margin-top: 30px;">Misc. Classes</h4>
+                        
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>CLASSNAME</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>text-uppercase</code></td>
+                                    <td>Sets <code>text-transform: uppercase</code> to the element</td>
+                                </tr>
+                                <tr>
+                                    <td><code>text-half-size</code></td>
+                                    <td>Set <code>font-size: 10px</code> to the element</td>
+                                </tr>
+                                <tr>
+                                    <td><code>no-border</code></td>
+                                    <td>Removes border of element</td>
+                                </tr>
+                                <tr>
+                                    <td><code>bg-*</code></td>
+                                    <td>Change background color of element <code>white|gray|primary|info|warning|success|danger</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+
+
+                    <section id="timeline">
+                        <h1 class="page-header">Timeline</h1>
+                        <p>The timeline shown below was exclusivley made for <strong>DefOne Admin Template</strong></p>
+                        <p>If you want to use this kind of timeline just add class <code>d-timeline</code> the the <code>ul</code> element witch contains the timeline list. For the cicle to apear you'll need to add <code>&lt;span class="circle"&gt;&lt;/span&gt;</code> in every <code>li</code> element in the list</p>
+                        <p>To style the border and the circle you can add a class <code>warning | danger | info | success</code> to the list element you want to stylize</p>
+                        <div class="row">
+                            <div class="col-md-8">
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;d-timeline&quot;&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li class=&quot;info&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;
+            &lt;i class=&quot;fa fa-comment fa-fw&quot;&gt;&lt;/i&gt; New Comment by &lt;a href=&quot;&quot;&gt;Jim Barnes&lt;/a&gt; on a photo of you
+            &lt;small class=&quot;help-block text-muted&quot;&gt;4 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;info&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;
+            &lt;i class=&quot;fa fa-twitter fa-fw&quot;&gt;&lt;/i&gt; &lt;img src=&quot;../assets/images/people/25x25/1.jpg&quot; alt=&quot;&quot;&gt; &lt;a href=&quot;#&quot;&gt;Cris Tucker&lt;/a&gt; and &lt;a href=&quot;#&quot;&gt;3 others&lt;/a&gt; started following you
+            &lt;small class=&quot;text-muted help-block&quot;&gt;12 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;success&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;      
+            &lt;i class=&quot;fa fa-envelope fa-fw&quot;&gt;&lt;/i&gt; &lt;a href=&quot;#&quot;&gt;Henry Hudson&lt;/a&gt; sent you a message.
+            &lt;small class=&quot;text-muted help-block&quot;&gt;4 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;warning&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;
+            &lt;i class=&quot;fa fa-tasks fa-fw&quot;&gt;&lt;/i&gt; &lt;strong&gt;Deadline on ACME&lt;/strong&gt; is overdue
+            &lt;small class=&quot;text-muted help-block&quot;&gt;4 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;success&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;
+            &lt;i class=&quot;fa fa-cloud-upload fa-fw&quot;&gt;&lt;/i&gt; &lt;strong&gt;Upload Completed&lt;/strong&gt; to primary server.
+            &lt;small class=&quot;text-muted help-block&quot;&gt;4 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;success&quot;&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;stacked-text&quot;&gt;
+            &lt;i class=&quot;fa fa-refresh fa-fw&quot;&gt;&lt;/i&gt; Server Rebooted
+            &lt;small class=&quot;text-muted help-block&quot;&gt;4 minutes ago&lt;/small&gt;
+        &lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;circle&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;fa fa-fw fa-exclamation-triangle&quot;&gt;&lt;/i&gt; &lt;strong&gt;See All Alerts&lt;/strong&gt;
+        &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</pre>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="d-timeline">
+                                    <li></li>
+                                    <li class="info">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">
+                                            <i class="fa fa-comment fa-fw"></i> New Comment by <a href="">Jim Barnes</a> on a photo of you
+                                            <small class="help-block text-muted">4 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li class="info">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">
+                                            <i class="fa fa-twitter fa-fw"></i> <img src="../assets/images/people/25x25/1.jpg" alt=""> <a href="#">Cris Tucker</a> and <a href="#">3 others</a> started following you
+                                            <small class="text-muted help-block">12 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li class="success">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">      
+                                            <i class="fa fa-envelope fa-fw"></i> <a href="#">Henry Hudson</a> sent you a message.
+                                            <small class="text-muted help-block">4 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li class="warning">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">
+                                            <i class="fa fa-tasks fa-fw"></i> <strong>Deadline on ACME</strong> is overdue
+                                            <small class="text-muted help-block">4 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li class="success">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">
+                                            <i class="fa fa-cloud-upload fa-fw"></i> <strong>Upload Completed</strong> to primary server.
+                                            <small class="text-muted help-block">4 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li class="success">
+                                        <span class="circle"></span>
+                                        <span class="stacked-text">
+                                            <i class="fa fa-refresh fa-fw"></i> Server Rebooted
+                                            <small class="text-muted help-block">4 minutes ago</small>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="circle"></span>
+                                        <i class="fa fa-fw fa-exclamation-triangle"></i> <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </li>
+                                </ul>
+                                <!-- /.dropdown-alerts -->
+                            </div>
+                        </div>
+                        
+                    </section>
+
+
+
+
+                    <section id="changelog">
+                        <h1 class="page-header">Changelog</h1>
+
+                        <strong>Version 1.3.1 - 6/07/2015</strong>
+                        <ul>
+                            <li>New aspect of the theme!</li>
+                            <li>Updated to Bootstrap 3.3.5</li>
+                            <li>Updated all the JavaScript Plugins to the latest versions</li>
+                            <li>Pixel perfect layout</li>
+                            <li>Updated CHATBAR on the right</li>
+                            <li>Major CSS fixes</li>
+                            <li>New navigation style</li>
+                            <li>Updated more understandable documentation</li>
+                            <li>Removed Page Tour from the Dashboard</li>
+                            <li>More efficient LESS structure</li>
+                            <li>9 New Layout Styles</li>
+                            <li>Added fixed Nabvar</li>
+                            <li>Added fixed Sidebar</li>
+                            <li>Added Footer Fixed &amp; Static</li>
+                            <li>2 New Widgets</li>
+                            <li>2 New Carousel Layouts</li>
+                            <li>2 New Icon Packs</li>
+                            <li>New 404 and 500 error pages</li>
+                        </ul>
+
+                        <strong>Version 1.3.0 - 16/08/2014</strong>
+                        <ul>
+                            <li>Update Bootstrap to v3.2</li>
+                            <li>Update FontAwesome to v4.2</li>
+                            <li>Minor CSS fixes</li>
+                            <li>10 new panel styles/layouts</li>
+                            <li>New Style Switcher</li>
+                            <li>Page Tour for:
+                                <ul>
+                                    <li>Dashboard</li>
+                                    <li>Fleet Management</li>
+                                    <li>Page Tour Page</li>
+                                </ul>
+                            </li>
+                            <li>Fleet managment pages
+                                <ul>
+                                    <li>Dashboard</li>
+                                    <li>Car view/info</li>
+                                    <li>Vehicles list</li>
+                                </ul>
+                            </li>
+                            <li>Panel functionalities</li>
+                                <ul>
+                                    <li>Reload</li>
+                                    <li>Remove</li>
+                                    <li>Settings</li>
+                                    <li>Minimize</li>
+                                </ul>
+                            </li>
+                            <li>6 New layout styles</li>
+                            <li>2 New carousel layouts</li>
+                            <li>3 New widgets</li>
+                        </ul>
+
+                        <strong>Version 1.2.0 - 11/05/2014</strong>
+                        <ul>
+                            <li>Minor CSS fixes</li>
+                            <li>Added Animation page</li>
+                            <li>Added Ion Range Slider plugin &amp; page</li>
+                            <li>Added PACE pageload progress</li>
+                            <li>Upgraded dashboard</li>
+                            <li>4 new widgets</li>
+                            <li>Mega Menu</li>
+                            <li>Cookie based style personalization</li>
+                        </ul>
+
+                        <strong>Version 1.1.0 - 04/05/2014</strong>
+                        <ul>
+                            <li>CSS Style &amp; Bug Fixes</li>
+                            <li>Added MAIL Page</li>
+                            <li>Added FINANCIAL/ECOMMERCE Page</li>
+                            <li>Added Invoice Page</li>
+                            <li>Added 404 Page</li>
+                            <li>Added 500 Page</li>
+                            <li>Added Bootstrap Checkbox</li>
+                            <li>Added elFinder File Manager</li>
+                            <li>Added DropZone File Uploader</li>
+                            <li>Included Google Charts API</li>
+                        </ul>
+
+                        <strong>Version 1.0.0 - 30/04/2014</strong>
+                        <ul>
+                            <li>Initial release</li>                            
+                        </ul>
+                        
+                    </section>
+
+
+                    <section id="support">
+                        <h1 class="page-header">Support</h1>
+                        <p>You can request for support via email or themeforest comments</p>
+                        <p>We also made sure that update from one version to another is like a walk in the park, when an update is ready themeforest will send you an email to you registered envato account.</p>
+                    </section>
+
+                    <section id="update">
+                        <h1 class="page-heading">Update</h1>
+                        <p>Once you download the new updates from Themeforest.</p>
+
+                        <p>Simply copy the contents of "d1-v1.4.0/assets" folder and place it your project root folder or where you put the assets folder in your project Thats it! Your are now updated and ready to go.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="../assets/js/jquery-2.1.4.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        <script src="../assets/js/plugins/select2/select2.js"></script>
+        <script src="../assets/js/init.js"></script>
+    </body>
+</html>

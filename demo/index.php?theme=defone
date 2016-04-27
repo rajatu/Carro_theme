@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DefOne - Responsive Bootstrap 3 Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="infobar clearfix">
+            <div class="logo">
+                <a href="#">
+                    <span>DEMO: DefOne - Responsive Bootstrap 3 Admin Template</span>
+                </a>
+            </div>
+
+            <div class="pull-right">
+                <div class="devices">
+                    <a href="#" data-toggle="desktop"><i class="fa fa-desktop fa-2x"></i></a>
+                    <a href="#" data-toggle="tablet"><i class="fa fa-tablet fa-2x"></i></a>
+                    <a href="#" data-toggle="mobile"><i class="fa fa-mobile fa-2x"></i></a>
+                </div>
+
+                <div class="purchase" data-view="http://themeforest.net/item/defone-responsive-bootstrap-3-admin-template/7403699">
+                    <a href="http://themeforest.net/item/defone-responsive-bootstrap-3-admin-template/7403699?ref=defthemes">
+                        <span class="pull-left">PURCHASE</span>
+                    </a>
+                </div>
+
+                <div class="remove-frame" data-view="http://defthemes.com/d1/html/index.html">
+                    <a href="http://defthemes.com/d1/html/index.html">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </header>
+
+    <section class="showcase monitor">
+        <iframe class="iframe" src="http://defthemes.com/d1/html/index.html" frameborder="0" width="100%"></iframe>
+    </section>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')
+    </script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
+

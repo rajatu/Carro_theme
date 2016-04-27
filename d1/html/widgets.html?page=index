@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: DefOne - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
+Version: 1.4.0
+Author: DefThemes
+Website: http://www.defthemes.com/
+Contact: defthemes@gmail.com
+Purchase: http://themeforest.net/item/defone-responsive-bootstrap-3-admin-template/7403699?ref=defthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+
+    <title>DefOne - Responsive Admin Template - v1.4.0</title>
+
+    <!-- Begin Page Progress Bar Files -->
+    <script type="text/javascript" src="../assets/js/plugins/pace-0.5.1/pace.min.js"></script>
+    <link href="../assets/js/plugins/pace-0.5.1/themes/pace-theme-minimal.css" rel="stylesheet">
+    <!-- // Page Progress Bar Files -->
+
+    <!-- Core CSS - Include with every page -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="../assets/icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Themify Icons -->
+    <link href="../assets/icons/themify/themify-icons.css" rel="stylesheet">
+    <!-- IonIcons Pack -->
+    <link href="../assets/icons/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <!-- Awesome Bootstrap Checkboxes -->
+    <link href="../assets/css/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    
+    
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="../assets/css/plugins/morris/morris.css" rel="stylesheet">
+    <link href="../assets/css/plugins/timeline/timeline.css" rel="stylesheet">
+    <!-- Date Range Picker Stylesheet -->
+    <link href="../assets/css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+        <link href="../assets/css/styles/default.css" type="text/css" rel="stylesheet" id="style_color" />
+    
+        <!-- Style LESS -->
+    <link href="../assets/less/animate.less?1436965415" rel="stylesheet/less" />
+        
+    
+</head>
+
+<body >
+
+    <div id="wrapper">
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle pull-left margin left" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="?page=index">
+                    <img src="../assets/images/d1-logo.png">
+                </a>
+                
+            </div>
+            <!-- /.navbar-header -->
+
+            <!-- MEGA MENU -->
+            <ul class="nav navbar-top-links navbar-left mega-menu hidden-xs hidden-sm">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-list-ul fa-fw"></i> MEGA MENU <span class="badge badge-danger animated pulse">new</span>
+                    </a>
+                    <div class="dropdown-menu mega-menu animated flipInY">
+                        <div class="row">
+                            <div class="col-sm-4 border right">
+                                <h3><i class="fa fa-list-ol fa fw"></i> Today's Tasks</h3>
+                                <div>
+                                    <p>
+                                        <strong>Deadline on ACME</strong>
+                                        <span class="pull-right text-muted">40%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <strong>Moving to new Headquarters</strong>
+                                        <span class="pull-right text-muted">20%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <strong>Writing the ACME code</strong>
+                                        <span class="pull-right text-muted">60%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Lorem ipsum</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur meti facilisi a adipiscing elit. Nulla facilisi. Phasellus in rutrum felis. Phasellus in rutrum felis.</p>
+                            </div>
+                            <div class="col-sm-4 border right">
+                                <h3><i class="fa fa-list-alt fa fw"></i> News</h3>
+                                <div class="has-nice-scroll" style="overflow-y: hidden; outline: none; height: 263px; z-index:3;">
+                                    <h4>Aliquam</h4>
+                                    <p>Aliquam erat volutpat. Nulla nec justo dui. Aeneanoi atet accumsan egestas tortor at lacinia. Pellentesque netus habitant morbi tristique senectus et netus etor egestasio malesuada famesac turpis egestas. </p>
+                                    <h4>Lorem ipsum</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur meti facilisi a adipiscing elit. AmetCurabitur nec lorem alty amet massalit fermentum massa eti. Nulla facilisi. Phasellus in rutrum felis. </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3><i class="fa fa-envelope fa fw"></i> New Messages</h3>
+                                
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                        
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                        
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+
+                                <span class="separator top btn btn-outline btn-info btn-block text-uppercase">View Messages</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- // MEGA MENU -->
+
+            <ul class="nav navbar-top-links navbar-right hidden-xs">
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <span class="badge badge-notification badge-warning animated fadeIn">7</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages animated flipInY">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle">
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em class="label label-info">Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <span class="badge badge-notification badge-danger animated fadeIn">3</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks animated fadeInUp">
+                        <li class="dropdown-header text-center">You have 3 Tasks alerts</li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Deadline on ACME</strong>
+                                        <span class="pull-right text-muted">40%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Moving to new Headquarters</strong>
+                                        <span class="pull-right text-muted">20%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Writing the ACME code</strong>
+                                        <span class="pull-right text-muted">60%</span>
+                                    </p>
+                                    <div class="progress progress-bar-mini progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="dropdown-footer">
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-exclamation-triangle fa-fw"></i> <span class="badge badge-notification badge-info animated fadeIn">3</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts d-timeline p-l-15 p-t-0 p-b-0 animated fadeInUp">
+                        <li></li>
+                        <li class="info">
+                            <span class="circle"></span>
+                            <span class="stacked-text">
+                                <i class="fa fa-comment fa-fw"></i> New Comment by <a href="">Jim Barnes</a> on a photo of you
+                                <small class="help-block text-muted">4 minutes ago</small>
+                            </span>
+                        </li>
+                        <li class="info">
+                            <span class="circle"></span>
+                            <span class="stacked-text">
+                                <i class="fa fa-twitter fa-fw"></i> <img src="../assets/images/people/25x25/1.jpg" alt=""> <a href="#">Cris Tucker</a> and <a href="#">3 others</a> started following you
+                                <small class="text-muted help-block">12 minutes ago</small>
+                            </span>
+                        </li>
+                        <li class="success">
+                            <span class="circle"></span>
+                            <span class="stacked-text">      
+                                <i class="fa fa-envelope fa-fw"></i> <a href="#">Henry Hudson</a> sent you a message.
+                                <small class="text-muted help-block">4 minutes ago</small>
+                            </span>
+                        </li>
+                        <li class="warning">
+                            <span class="circle"></span>
+                            <span class="stacked-text">
+                                <i class="fa fa-tasks fa-fw"></i> <strong>Deadline on ACME</strong> is overdue
+                                <small class="text-muted help-block">4 minutes ago</small>
+                            </span>
+                        </li>
+                        <li class="success">
+                            <span class="circle"></span>
+                            <span class="stacked-text">
+                                <i class="fa fa-cloud-upload fa-fw"></i> <strong>Upload Completed</strong> to primary server.
+                                <small class="text-muted help-block">4 minutes ago</small>
+                            </span>
+                        </li>
+                        <li class="success">
+                            <span class="circle"></span>
+                            <span class="stacked-text">
+                                <i class="fa fa-refresh fa-fw"></i> Server Rebooted
+                                <small class="text-muted help-block">4 minutes ago</small>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <i class="fa fa-fw fa-exclamation-triangle"></i> <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle user" data-toggle="dropdown" href="#">
+                        Jonathan Doe
+                        <img src="../assets/images/people/25x25/1.jpg" alt="" data-src="../assets/images/people/25x25/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" class="img-responsive img-circle user-img">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user animated fadeInUp">
+                        <li class="user-information">
+                             <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object user-profile-image img-circle" src="../assets/images/people/65x65/1.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Jonathan Doe</h4>
+                                    <h5>Software Developer at <a href="http://defthemes.com">DefThemes</a></h5>
+                                    <hr style="margin:8px auto">
+
+                                    <span class="label label-default">HTML5/CSS3</span>
+                                    <span class="label label-warning">jQuery</span>
+                                    <span class="label label-info">PHP5</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-tasks"></i> Tasks <span class="badge badge-info pull-right">6 new</span></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> Messages <span class="badge badge-info pull-right">4 new</span></a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="text-danger"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="active"><a href="#" class="animated fadeIn trigger-sidebar"><i class="fa fa-comments"></i> </a></li>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+        </nav>
+        <!-- /.navbar-static-top -->
+
+
+        <nav id="menu" class="navbar-default navbar-fixed-side hidden-xs" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-user">
+                        <div class="user-img">
+                            <img src="../assets/images/people/65x65/1.jpg" alt="" data-src="../assets/images/people/65x65/1.jpg" data-src-retina="../assets/images/people/x2/1x2.jpg" width="65" height="65" class="img-responsive img-circle animated bounceIn">
+                        </div>
+                        <div class="user-info">
+                            <div class="user-greet">Welcome</div>
+                            <div class="user-name">Jonathan Doe</div>
+                            <div class="user-status animated bounceInLeft">
+                                <span class="label label-success dropdown-toggle">Online</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Quick Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-inverse" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    
+                    
+                    <li >
+                        <a href="index.html"><i class="fa fa-desktop fa-fw"></i> Dashboard</a>
+                    </li>
+
+                                        <li class="active">
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Components <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level in">
+                            <li >
+                                <a href="panels-wells.html">Panels and Wells <span class="label label-info pull-right">+10</span></a>
+                            </li>
+                            <li >
+                                <a href="buttons.html">Buttons</a>
+                            </li>
+                            <li >
+                                <a href="animations.html">CSS Animations <span class="label label-info pull-right">NEW</span></a>
+                            </li>
+                            <li >
+                                <a href="progress-bars.html">Progress bars</a>
+                            </li>
+                            <li >
+                                <a href="sliders.html">jQuery Sliders</a>
+                            </li>
+                            <li >
+                                <a href="ion-sliders.html">Ion Range Sliders <span class="label label-warning pull-right">NEW</span></a>
+                            </li>
+                            <!-- <li >
+                                <a href="noui-sliders.html">NoUI Range Sliders</a>
+                            </li> -->
+                            <li >
+                                <a href="carousels.html">Carousels <span class="label label-info pull-right">+2</span></a>
+                            </li>
+                            <li >
+                                <a href="icons.html">Icons</a>
+                            </li>
+                            <li >
+                                <a href="#">Notifications <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level ">
+                                    <li >
+                                        <a href="notifications.html">Default Notifications</a>
+                                    </li>
+                                    <!-- <li >
+                                        <a href="toastr.html">Toastr Notifications <span class="label label-info">NEW</span></a>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="widgets.html">Widgets <span class="label label-info pull-right">+3</span></a>
+                            </li>
+                            <li >
+                                <a href="typography.html">Typography</a>
+                            </li>
+                            <li >
+                                <a href="grid.html">Grid</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li >
+                        <a href="#"><i class="fa fa-edit fa-fw"></i> Forms <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="form-elements.html">Form elements</a>
+                            </li>
+                            <li >
+                                <a href="validation.html">Form validation</a>
+                            </li>
+                            <li >
+                                <a href="file-manager.html">File manager</a>
+                            </li>
+                            <li >
+                                <a href="dropzone.html">DropZone</a>
+                            </li>
+                            <li >
+                                <a href="editor.html">WYSIWYG Editor</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li >
+                        <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="flot.html">Flot Charts</a>
+                            </li>
+                            <li >
+                                <a href="morris.html">Morris.js Charts</a>
+                            </li>
+                            <li >
+                                <a href="c3-charts.html">C3 Charts <span class="label label-info pull-right">new</span></a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li >
+                        <a href="mail.html"><i class="fa fa-envelope fa-fw"></i> Mail</a>
+                    </li>
+                    <li >
+                        <a href="financial.html"><i class="fa fa-money fa-fw"></i> Financial  <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="invoice.html">Invoice</a>
+                            </li>
+                            <li >
+                                <a href="finances.html">Finances</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+
+                    <li >
+                        <a href="fleet.html"><i class="fa fa-automobile fa-fw"></i> Fleet Management  <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="fleet-dashboard.html">Dashboard</a>
+                            </li>
+                            <li >
+                                <a href="fleet-view-vehicle.html">View Vehicle</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li >
+                        <a href="maps.html"><i class="fa fa-map-marker fa-fw"></i> Maps</a>
+                    </li>
+                    <li >
+                        <a href="calendar.html"><i class="fa fa-calendar-o fa-fw"></i> Calendar</a>
+                    </li>
+                    <li >
+                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables  <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="tables.html">Default and DataTables</a>
+                            </li>
+                            <li >
+                                <a href="pricing_tables.html">Pricing Tables</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    
+                    
+                    <li >
+                        <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level ">
+                            <li >
+                                <a href="blank.html">Blank Page</a>
+                            </li>
+                            <li >
+                                <a href="page-tour.html">Page Tour</a>
+                            </li>
+                            <li >
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li >
+                                <a href="register.html">Register</a>
+                            </li>
+                            <li >
+                                <a href="404.html">404 Error</a>
+                            </li>
+                            <li >
+                                <a href="500.html">500 Error</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+
+                    
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+
+            <ul class="sidebar-stats">
+                <li class="margin left right">
+                    <h5>summary</h5>
+                </li>
+                <li class="row margin left right inner-b">
+                    <div class="col-xs-6 reset padding left">
+                        <span class="text-muted">Daily Traffic</span>
+                        <span class="h4">630, 201</span>
+                    </div>
+                    <div class="sparkline warning col-xs-6 text-right inner-t reset padding right"></div>   
+                </li>
+                <li class="row margin left right inner-t">
+                    <span class="text-muted">Project OASIS</span>
+                    <span class="text-muted pull-right">40% completed</span>
+                    <div class="progress progress-bar-mini progress-striped active">
+                        <div class="progress-bar progress-bar-info" data-toggle="tooltip" data-container="body" title="Task progress 40%" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% (success)</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="row margin left right">
+                    <div class="col-xs-6 reset padding left">
+                        <span class="text-muted">CPU Usage</span>
+                        <span class="h4">78,5%</span>
+                    </div>
+                    <div class="easy-pie danger pull-right margin right" data-percent="78%"><div class="percent"></div></div>   
+                </li>
+            </ul>
+
+            
+        </nav>
+        <!-- /.navbar-static-side -->
+
+        
+        <div id="page-wrapper" class="fixed-navbar ">
+<div class="page-header">
+    <h3 class="heading"><i class="fa fa-edit animated flip"></i> Widgets <span class="sub-heading">Welcome back Jonathan Doe</span></h3>
+</div>
+<!-- /.col-lg-12 -->
+
+<!-- Breadcrumbs -->
+<ol class="breadcrumb clearfix">
+    <li><i class="fa fa-home"></i> &nbsp;&nbsp;<a href="#">Home</a></li>
+    <li><a href="#">UI Elements</a></li>
+    <li class="active">Widgets</li>
+</ol>
+<!-- // Breadcrumbs -->
+
+<div class="container-fluid bg-gray">
+    <h3>User Card Widgets</h3>
+    <div class="row">
+        <div class="col-md-3">
+            <!-- User Card Mini - Right Profile Image -->
+            <div class="user-card-mini row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <span>Karen Torres</span>
+                    <span>Web Designer</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <img src="../assets/images/people/50x50/2.jpg" alt="">
+                </div>
+            </div>
+            <!-- end: User Card Mini - Right Profile Image -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini - Right Profile Image -->
+            <div class="user-card-mini row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <span>Howard Palmer</span>
+                    <span>UX Programmer</span>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <img src="../assets/images/people/50x50/3.jpg" alt="">
+                </div>
+            </div>
+            <!-- end: User Card Mini - Right Profile Image -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini - Left Profile Image -->
+            <div class="user-card-mini row">
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <img src="../assets/images/people/50x50/3.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <span>Howard Palmer</span>
+                    <span>UX Programmer</span>
+                </div>
+            </div>
+            <!-- end: User Card Mini - Left Profile Image -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini - Left Profile Image -->
+            <div class="user-card-mini row">
+                <div class="col-md-4 col-sm-4 col-xs-4 text-center">
+                    <img src="../assets/images/people/50x50/2.jpg" alt="">
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <span>Howard Palmer</span>
+                    <span>UX Programmer</span>
+                </div>
+            </div>
+            <!-- end: User Card Mini - Left Profile Image -->
+        </div>
+    </div>
+    
+    <div class="separator bottom"></div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- User Card Mini w/ stats -->
+            <div class="user-card-mini">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <span>Vincent Powell</span>
+                        <span>Web Designer</span>
+                        <span><small>New York, US</small></span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="../assets/images/people/50x50/3.jpg" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="stats row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Projects</span>
+                        <span>5</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Followers</span>
+                        <span>45</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end: User Card Mini w/ stats -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini w/ stats -->
+            <div class="user-card-mini">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <span>Gregory Morgan</span>
+                        <span>Web Designer</span>
+                        <span><small>New York, US</small></span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="../assets/images/people/50x50/1.jpg" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="stats row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Projects</span>
+                        <span>5</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Followers</span>
+                        <span>45</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end: User Card Mini w/ stats -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini w/ stats -->
+            <div class="user-card-mini">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <span>Denise Coleman</span>
+                        <span>Web Designer</span>
+                        <span><small>New York, US</small></span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="../assets/images/people/50x50/2.jpg" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="stats row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Projects</span>
+                        <span>5</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Followers</span>
+                        <span>45</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end: User Card Mini w/ stats -->
+        </div>
+        <div class="col-md-3">
+            <!-- User Card Mini w/ stats -->
+            <div class="user-card-mini">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-8">
+                        <span>Diana Hart</span>
+                        <span>Web Designer</span>
+                        <span><small>New York, US</small></span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <img src="../assets/images/people/50x50/4.jpg" alt="">
+                    </div>
+                </div>
+                <hr>
+                <div class="stats row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Projects</span>
+                        <span>5</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <span>Followers</span>
+                        <span>45</span>
+                    </div>
+                </div>
+            </div>
+            <!-- end: User Card Mini w/ stats -->
+        </div>
+    </div>
+
+    <div class="separator bottom"></div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Elegant User Widget w/ Stats  -->
+            <div class="user-panel">
+                <div class="text-center">
+                    <img src="../assets/images/people/65x65/1.jpg" alt="">
+                    <span>Harold Hill</span>
+                </div>
+                <div class="user-job">
+                    web developer
+                </div>
+                <div class="row user-stats">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="fa fa-certificate"></i>
+                        3 Cert
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="ti-wallet"></i>
+                        &dollar; 3,156
+                    </div>
+                </div>
+            </div>
+            <!-- end: Elegant User Widget w/ Stats  -->
+        </div>
+        <div class="col-md-3">
+            <!-- Elegant User Widget w/ Stats  -->
+            <div class="user-panel">
+                <div class="text-center">
+                    <img src="../assets/images/people/65x65/3.jpg" alt="">
+                    <span>Matthew Davidson</span>
+                </div>
+                <div class="user-job">
+                    web developer
+                </div>
+                <div class="row user-stats">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="fa fa-certificate"></i>
+                        3 Certs
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="ti-wallet"></i>
+                        &dollar; 3,156
+                    </div>
+                </div>
+            </div>
+            <!-- end: Elegant User Widget w/ Stats  -->
+        </div>
+        <div class="col-md-3">
+            <!-- Elegant User Widget w/ Stats  -->
+            <div class="user-panel">
+                <div class="text-center">
+                    <img src="../assets/images/people/65x65/5.jpg" alt="">
+                    <span>Justin Shaw</span>
+                </div>
+                <div class="user-job">
+                    web designer
+                </div>
+                <div class="row user-stats">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="fa fa-certificate"></i>
+                        3 Certs
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="ti-wallet"></i>
+                        &dollar; 3,156
+                    </div>
+                </div>
+            </div>
+            <!-- end: Elegant User Widget w/ Stats  -->
+        </div>
+        <div class="col-md-3">
+            <!-- Elegant User Widget w/ Stats  -->
+            <div class="user-panel">
+                <div class="text-center">
+                    <img src="../assets/images/people/65x65/4.jpg" alt="">
+                    <span>Brenda Cole</span>
+                </div>
+                <div class="user-job">
+                    ui designer
+                </div>
+                <div class="row user-stats">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="fa fa-certificate"></i>
+                        3 Certs
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                        <i class="ti-wallet"></i>
+                        &dollar; 3,156
+                    </div>
+                </div>
+            </div>
+            <!-- end: Elegant User Widget w/ Stats  -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h3>Dashboard Visitors Widget</h3>
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <!-- Page Views Full Widget -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Visitors
+                </div>
+                <div class="panel-body">
+                    <div class="row reset padding-all">
+                        <div class="col-md-8 reset padding right">
+                            <div id="world-map-markers" style="height: 250px;"></div>
+                        </div>
+                        <div class="col-md-4 hidden-sm hidden-xs">
+                            <!-- Date Picker -->
+                            <div id="reportrange" class="btn btn-default pull-right">
+                                <i class="fa fa-calendar fa-lg"></i>
+                                <span>February 3, 2014 - March 5, 2014</span> <b class="caret"></b>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <!-- Progress -->
+                            <div class="block margin bottom">
+                                <span class="text-muted">MALE VISITORS</span>
+                                <span class="text-muted text-right pull-right">40%</span>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-success" data-toggle="tooltip" data-container="body" title="" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-original-title="60%">
+                                        <span class="sr-only">60% (success)</span>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <!-- Progress -->
+                            <div class="block margin bottom">
+                                <span class="text-muted">FEMALE VISITORS</span>
+                                <span class="text-muted text-right pull-right">40%</span>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" data-toggle="tooltip" data-container="body" title="" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" data-original-title="40%">
+                                        <span class="sr-only">40% (success)</span>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <!-- Progress -->
+                            <div class="block margin bottom">
+                                <span class="text-muted">AGE 18 - 25</span>
+                                <span class="text-muted text-right pull-right">40%</span>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-info" data-toggle="tooltip" data-container="body" title="" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%" data-original-title="60%">
+                                        <span class="sr-only">60% (success)</span>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <!-- Progress -->
+                            <div class="block margin bottom">
+                                <span class="text-muted">AGE 25 - 50</span>
+                                <span class="text-muted text-right pull-right">40%</span>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" data-toggle="tooltip" data-container="body" title="" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%" data-original-title="40%">
+                                        <span class="sr-only">40% (success)</span>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Top visits <small>by city</small></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>1</strong></td>  
+                                      <td class="border right">New York</td>
+                                      <td class="text-right">73 <i class="fa fa-arrow-circle-up text-success"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>2</strong></td>  
+                                      <td class="border right">Amsterdam</td>
+                                      <td class="text-right">286 <i class="fa fa-arrow-circle-up text-success"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>3</strong></td>  
+                                      <td class="border right">London</td>
+                                      <td class="text-right">260 <i class="fa fa-arrow-circle-down text-danger"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>4</strong></td>  
+                                      <td class="border right">Toronto</td>
+                                      <td class="text-right">232 <i class="fa fa-arrow-circle-down text-danger"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>5</strong></td>  
+                                      <td class="border right">Sydney</td>
+                                      <td class="text-right">344 <i class="fa fa-arrow-circle-up text-success"></i></td>
+                                    </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Top referals</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>1</strong></td>  
+                                      <td class="border right">Google</td>
+                                      <td class="text-right">269 <i class="fa fa-arrow-circle-down text-danger"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>2</strong></td>  
+                                      <td class="border right">Twitter</td>
+                                      <td class="text-right">119 <i class="fa fa-arrow-circle-down text-danger"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>3</strong></td>  
+                                      <td class="border right">Ask</td>
+                                      <td class="text-right">152 <i class="fa fa-arrow-circle-up text-success"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>4</strong></td>  
+                                      <td class="border right">Yahoo</td>
+                                      <td class="text-right">189 <i class="fa fa-arrow-circle-down text-danger"></i></td>
+                                    </tr>
+                                                                        <tr>
+                                      <td class="text-center border right"><strong>5</strong></td>  
+                                      <td class="border right">Facebook</td>
+                                      <td class="text-right">271 <i class="fa fa-arrow-circle-up text-success"></i></td>
+                                    </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <strong>SOCIAL</strong>
+                            <div class="row separator bottom">
+                                <div class="col-md-6 col-sm-6">
+                                    <!-- Facebook Mini Widget -->
+                                    <div class="panel padding left right reset shadow-all">
+                                        <div class="panel-body reset padding left right">
+                                            <div class="col-sm-6 border right bg-info text-center">
+                                                <i class="fa fa-facebook fa-2x text-white margin top bottom"></i>
+                                            </div>
+                                            <div class="col-sm-6 text-center">
+                                                <div class="easy-pie success" data-percent="60%"><span class="percent"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Facebook Mini Widget -->
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <!-- Twitter Mini Widget -->
+                                    <div class="panel padding left right reset shadow-all">
+                                        <div class="panel-body reset padding left right">
+                                            <div class="col-sm-6 border right bg-success text-center">
+                                                <i class="fa fa-twitter fa-2x text-white margin top bottom"></i>
+                                            </div>
+                                            <div class="col-sm-6 text-center">
+                                                <div class="easy-pie warning" data-percent="64%"><span class="percent"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Twitter Mini Widget -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <!-- Google+ Mini Widget -->
+                                    <div class="panel padding left right reset shadow-all">
+                                        <div class="panel-body reset padding left right">
+                                            <div class="col-sm-6 border right bg-danger text-center">
+                                                <i class="fa fa-google-plus fa-2x text-white margin top bottom"></i>
+                                            </div>
+                                            <div class="col-sm-6 text-center">
+                                                <div class="easy-pie danger" data-percent="34%"><span class="percent"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Google+ Mini Widget -->
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <!-- YouTube Mini Widget -->
+                                    <div class="panel padding left right reset shadow-all">
+                                        <div class="panel-body reset padding left right">
+                                            <div class="col-sm-6 border right bg-danger text-center">
+                                                <i class="fa fa-youtube fa-2x text-white margin top bottom"></i>
+                                            </div>
+                                            <div class="col-sm-6 text-center">
+                                                <div class="easy-pie danger" data-percent="69%"><span class="percent"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of YouTube Mini Widget -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Views Full Widget -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-gray">
+    <h3>Simple Statistics Widgets</h3>
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <!-- Earnings Widget -->
+            <div class="panel">
+                <div class="panel-heading text-center bg-warning no-border">
+                    <i class="fa fa-money fa-3x margin top bottom text-white"></i>
+                </div>
+                <div class="inner-t inner-b text-center clearfix">
+                    <div class="h3 font-bold">&euro;88,116</div>
+                    <small class="text-muted">Earnings</small>
+                </div><!-- panel-body -->
+            </div>
+            <!-- Earnings Widget -->
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <!-- Fav Widget -->
+            <div class="panel">
+                <div class="panel-heading text-center bg-success no-border">
+                    <i class="fa fa-heart fa-3x margin top bottom text-white"></i>
+                </div>
+                <div class="inner-t inner-b text-center clearfix">
+                    <div class="col-xs-6 border right">
+                        <div class="h3 font-bold">&euro;906</div>
+                        <small class="text-muted">Favorites</small>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="h3 font-bold">&euro;238</div>
+                        <small class="text-muted">Likes</small>
+                    </div>
+                </div><!-- panel-body -->
+            </div>
+            <!-- Fav Widget -->
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <!-- Facebook Stats  Widget -->
+            <div class="panel">
+                <div class="panel-heading no-border bg-info text-center clearfix">
+                    <a href="#">
+                        <i class="fa fa-facebook fa fa-3x margin top bottom text-white"></i>
+                    </a>
+                </div>
+                <div class="inner-t inner-b text-center clearfix">
+                    <div class="col-xs-4 border right">
+                        <div class="h3 font-bold">38k</div>
+                        <small class="text-muted">Friends</small>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="h3 font-bold">90</div>
+                        <small class="text-muted">New Posts</small>
+                    </div>
+                    <div class="col-xs-4 border left">
+                        <div class="h3 font-bold">48</div>
+                        <small class="text-muted">Request(s)</small>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Facebook Stats Widget -->
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <!-- Google+ Stats  Widget -->
+            <div class="panel">
+                <div class="panel-heading no-border bg-primary text-center clearfix">
+                    <a href="#">
+                        <i class="fa fa-google-plus fa fa-3x margin top bottom text-white"></i>
+                    </a>
+                </div>
+                <div class="inner-t inner-b text-center clearfix">
+                    <div class="col-xs-4 border right">
+                        <div class="h3 font-bold">78k</div>
+                        <small class="text-muted">Friends</small>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="h3 font-bold">82</div>
+                        <small class="text-muted">New Posts</small>
+                    </div>
+                    <div class="col-xs-4 border left">
+                        <div class="h3 font-bold">57</div>
+                        <small class="text-muted">Request(s)</small>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Google+ Stats Widget -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h3>Multi-purpose Widgets</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Weather Widget -->
+            <div class="panel darken success">
+                <div class="panel-heading no-border text-white">
+                    <a class="pull-right" href="#"><i class="fa fa-map-marker fa-2x text-white"></i></a>
+                    <span class="h3">London, UK</span>
+                    <div class="text-center inner-all margin top">
+                        <span class="h1"><i class="fa fa-sun-o text-white animate bounceInDown"></i> 23&deg;</span>
+                    </div>
+                </div>
+                <div class="panel-body lighten success no-border">
+                    <div class="row">
+                        <div class="col-xs-4 text-center darken-border success right">
+                            <span class="text-white block">Humidity</span>
+                            <span>56 %</span>
+                        </div>
+                        <div class="col-xs-4 text-center">
+                            <span class="text-white block">Precip.</span>
+                            <span>0.00 in</span>
+                        </div>
+                        <div class="col-xs-4 text-center darken-border success left">
+                            <span class="text-white block">Winds</span>
+                            <span>7 mp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Weather Widget -->
+        </div>
+        <div class="col-md-4">
+            <!-- New Post Widget -->
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="margin bottom">
+                        <small class="text-muted pull-right">5m ago</small>
+                        <a href="#" class="pull-left margin right">
+                            <img src="../assets/images/people/25x25/1.jpg" class="img-circle">
+                        </a>
+                        <div class="clearfix">
+                            <a href="#"><strong>Jonathan Smith</strong></a>
+                            <small class="block text-muted">San Francisco, USA</small>
+                        </div>
+                    </div>
+                    <p>There are a few easy ways to quickly get started with Bootstrap... </p>
+                    <small class="">
+                        <a href="#"><i class="fa fa-comment-o"></i> Comments (13)</a>
+                    </small>
+                </div>
+                <div class="panel-footer reset padding-all">
+                    <span class="arrow top"></span>
+                    <form>
+                        <input type="text" class="form-control no-border " placeholder="Write a comment...">
+                    </form>
+                </div>
+            </div>
+            <!-- End of New Post Widget -->
+        </div>
+        <div class="col-md-4">
+            <!-- Check-In Widget -->
+            <div class="panel">
+                <div class="panel-body reset padding left right bottom">
+                    <div class="margin left right">
+                        <small class="text-muted pull-right" data-toggle="tooltip" data-container="body" title="July 15 2015 14:03:35" data-placement="left">1 hour ago</small>
+                        <a href="#" class="pull-left margin right">
+                            <img src="../assets/images/people/25x25/3.jpg" class="img-circle">
+                        </a>
+                        <div class="clearfix">
+                            <a href="#"><strong>John Smith</strong></a>
+                            <small class="block text-muted">New York, NY, USA</small>
+                        </div>
+                    </div>
+                    <div class="margin top">
+                        <p class="text-center reset margin bottom" style="height: 85px;background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&amp;zoom=12&amp;size=600x300&amp;maptype=roadmap&sensor=false'); background-size: cover; background-repeat: no-repeat;">
+                            <i class="fa fa-map-marker text-danger fa fa-4x animated bounceInDown" data-toggle="tooltip" title="" data-original-title="Checked in at New York"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel-footer reset padding-all">
+                    <form>
+                        <input type="text" class="form-control no-border" placeholder="Write a comment...">
+                    </form>
+                </div>
+            </div>
+            <!-- End of Check-In Widget -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-gray">
+    <h3>Other User Widgets</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <!-- Panel Google Plus Style Widget -->
+            <div class="panel panel-default panel-google-plus">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        <i class="fa fa-fw fa-cogs"></i><span class="fa fa-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="panel-google-plus-tags">
+                    <ul>
+                        <li>#Millennials</li>
+                        <li>#Generation</li>
+                    </ul>
+                </div>
+                <div class="panel-heading">
+                    <img class="img-rounded pull-left m-r-10" style="border: 1px solid #bbb;" src="../assets/images/people/50x50/1.jpg" width="36" height="36" alt="John Doe">
+                    <h3>Johnathan Doe</h3>
+                    <h5 class="m-t-5"><span>Shared publicly</span> - <span>Jun 27, 2014</span> </h5>
+                </div>
+                <div class="panel-body">
+                    <p>"To live is the rarest thing in the world. Most people exist, that is all." -- Oscar Wilde</p>
+                </div>
+                <div class="panel-footer">
+                    <button type="button" class="btn btn-default"><i class="fa fa-google-plus"></i></button>
+                    <button type="button" class="btn btn-default">
+                        <span class="fa fa-share"></span>
+                    </button>
+                    <div class="input-placeholder">Add a comment...</div>
+                </div>
+                <div class="panel-google-plus-comment">
+                    <img class="img-circle" src="../assets/images/people/50x50/2.jpg" alt="Smiler User">
+                    <div class="panel-google-plus-textarea">
+                        <textarea rows="4"></textarea>
+                        <button type="submit" class="btn btn-success disabled">Post comment</button>
+                        <button type="reset" class="btn btn-default">Cancel</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- End of Panel Google Plus Style Widget -->
+        </div>
+
+        <div class="col-sm-6">
+            <div class="well profile">
+                <div class="col-sm-12">
+                    <div class="col-xs-12 col-sm-8">
+                        <h2>Doe Junior</h2>
+                        <p><strong>About: </strong> Web Designer / UI. </p>
+                        <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+                        <p><strong>Skills: </strong>
+                            <span class="tags">html5</span> 
+                            <span class="tags">css3</span>
+                            <span class="tags">jquery</span>
+                            <span class="tags">bootstrap3</span>
+                        </p>
+                    </div>             
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <figure>
+                            <img src="../assets/images/people/x2/5x2.jpg" alt="" class="img-circle img-responsive">
+                            <figcaption class="ratings">
+                                <p>Ratings
+                                <a href="#">
+                                    <span class="fa fa-star"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-star"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-star"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="fa fa-star"></span>
+                                </a>
+                                <a href="#">
+                                     <span class="fa fa-star-o"></span>
+                                </a> 
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>            
+                <div class="col-xs-12 divider text-center">
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong> 20,7K </strong></h2>                    
+                        <p><small>Followers</small></p>
+                        <button class="btn btn-success btn-block"><span class="fa fa-plus-circle"></span> Follow </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong>245</strong></h2>                    
+                        <p><small>Following</small></p>
+                        <button class="btn btn-info btn-block"><span class="fa fa-user"></span> View Profile </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 emphasis">
+                        <h2><strong>43</strong></h2>                    
+                        <p><small>Snippets</small></p>
+                        <div class="btn-group dropup btn-block">
+                          <button type="button" class="btn btn-primary"><span class="fa fa-gear"></span> Options </button>
+                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu text-left" role="menu">
+                            <li><a href="#"><span class="fa fa-envelope pull-right"></span> Send an email </a></li>
+                            <li><a href="#"><span class="fa fa-list pull-right"></span> Add or remove from a list  </a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><span class="fa fa-warning pull-right"></span>Report this user for spam</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="btn disabled" role="button"> Unfollow </a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h3>Cards</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Card Hovered  -->
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a target="_blank" href="http://scripteden.com/">Script Eden</a>
+                    </div>
+                    <div class="desc">Passionate designer</div>
+                    <div class="desc">Curious developer</div>
+                    <div class="desc">Tech geek</div>
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- End of Card Hovered  -->
+        </div>
+
+        <div class="col-md-4">
+            <!-- Card Hovered  -->
+            <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" src="http://lorempixel.com/100/100/people/9/">
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div>
+                <hr>
+                <div class="row separator bottom stats">
+                    <div class="col-md-4 col-sm-4 col-xs-4 inner-all">
+                        <h3>followers</h3>
+                        <span>145</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 border left inner-all">
+                        <h3>favorites</h3>
+                        <span>45</span>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 border left inner-all">
+                        <h3>following</h3>
+                        <span>35</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Card Hovered  -->
+        </div>
+
+        <div class="col-md-4" style="height: 450px;">
+            <div class="flip-card-container">
+                <div class="flip-card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="http://www.iwantcovers.com/wp-content/uploads/2012/07/Pebble-Beach.jpg"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="../assets/images/people/x2/1x2.jpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Willie Herrera</h3>
+                                <p class="profession">CEO</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Paris, France</h5>
+                                <h5><i class="fa fa-building-o fa-fw text-muted"></i> DefaultThemes Inc. </h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> doe@defthemes.com</h5>
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Experince</h4>
+                                <p>In the project since 2011</p>
+                                <h4 class="text-center">Areas of Expertise</h4>
+                                <p>Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="http://cretive-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end flip-card -->
+            </div> <!-- end flip-card-container -->
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-gray">
+    <h3>Blog Author Widget</h3>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="author-bio">
+                <ul class="social-list">
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on Facebook"><i class="fa fa-fw fa-facebook"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on Twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on Google+"><i class="fa fa-fw fa-google-plus"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on Pinterest"><i class="fa fa-fw fa-pinterest"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on Soundcloud"><i class="fa fa-fw fa-soundcloud"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on YouTube"><i class="fa fa-fw fa-youtube"></i></a></li>
+                    <li><a href="" data-toggle="tooltip" data-container="body" data-placement="right" title="Follow Johnny Bradley on LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 text-center user-img">
+                        <img src="../assets/images/people/x2/5x2.jpg" alt="">
+                    </div>
+                    <div class="col-md-10 col-sm-8 p-r-60">
+                        <h3>Johnny Bradley</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum maxime dolorem, expedita soluta, iusto quam facere tenetur placeat fugit nulla, neque quasi sunt.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, sequi reprehenderit repellendus, rerum perferendis facere odio sed ipsum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <!-- /#page-wrapper -->
+
+        <!-- Side Bar Chat & Mail & History & Settings -->
+        <div class="sidebar-right">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#chat" data-toggle="tab"><i class="fa fa-comments"></i></a></li>
+                <li><a href="#inbox" data-toggle="tab"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#history" data-toggle="tab"><i class="fa fa-eye"></i></a></li>
+            </ul>
+
+            <div class="sidebar-right-search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Quick Search...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <!-- Chat Content -->
+                <div class="tab-pane fade in active inner-all" id="chat">
+                    <h5 class="sidebar-title">online friends <span class="label label-success pull-right">5</span></h5>
+                    <ul class="chat-list">
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/1.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">John Smith</span>
+                                        <span class="message">Hey, How it is going?...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/2.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Stephanie Carr</span>
+                                        <span class="message">Haha that's was so funny...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Rebecca Harris</span>
+                                        <span class="message">When do you have a...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Kimberly Stanley</span>
+                                        <span class="message">I miss you honey so much...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="danger" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Nicholas Gibson</span>
+                                        <span class="message">Are you available tomorrow...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Steven Taylor</span>
+                                        <span class="message">Hi there!...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/5.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Jack Rivera</span>
+                                        <span class="message">Tomorrow i need that file...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                            </ul>
+                    <h5 class="sidebar-title">offline friends</h5>
+                    <ul class="chat-list">
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/1.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">John Smith</span>
+                                        <span class="message">Hey, How it is going?...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/2.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Stephanie Carr</span>
+                                        <span class="message">Haha that's was so funny...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Rebecca Harris</span>
+                                        <span class="message">When do you have a...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Kimberly Stanley</span>
+                                        <span class="message">I miss you honey so much...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Nicholas Gibson</span>
+                                        <span class="message">Are you available tomorrow...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Steven Taylor</span>
+                                        <span class="message">Hi there!...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/5.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Jack Rivera</span>
+                                        <span class="message">Tomorrow i need that file...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/2.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Kimberly Stanley</span>
+                                        <span class="message">Hey, How it is going?...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">John Smith</span>
+                                        <span class="message">When do you have a...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Chat Content -->
+                <div class="tab-pane fade inner-all" id="inbox">
+                    <h5 class="sidebar-title">inbox <span class="label label-success pull-right">5</span></h5>
+                    <ul class="inbox-list">
+                        <li>
+                            <div class="media">
+                                <span class="label label-success pull-left">14/07</span>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="pull-left text-center">
+                                    <span class="label label-danger">14/07</span>
+                                    <i class="fa fa-paperclip" data-container="body" data-toggle="tooltip" data-placement="left" title="Attachment to this email"></i>
+                                </div>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <span class="label label-success pull-left">13/07</span>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </small>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="media">
+                                <div class="pull-left text-center">
+                                    <span class="label label-danger">14/07</span>
+                                    <i class="fa fa-paperclip" data-container="body" data-toggle="tooltip" data-placement="left" title="Attachment to this email"></i>
+                                </div>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <span class="label label-success pull-left">13/07</span>
+                                <div class="media-body">
+                                    <strong>Eileen Sideways</strong>
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </small>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade inner-all" id="history">
+                    <h5 class="sidebar-title">Latest conversations <span class="label label-success pull-right">5</span></h5>
+                    <ul class="chat-list">
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/1.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">John Smith</span>
+                                        <span class="message">Hey, How it is going?...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/2.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Stephanie Carr</span>
+                                        <span class="message">Haha that's was so funny...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Rebecca Harris</span>
+                                        <span class="message">When do you have a...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Kimberly Stanley</span>
+                                        <span class="message">I miss you honey so much...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="danger" alt="" src="../assets/images/people/50x50/3.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Nicholas Gibson</span>
+                                        <span class="message">Are you available tomorrow...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="success" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Steven Taylor</span>
+                                        <span class="message">Hi there!...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="warning" alt="" src="../assets/images/people/50x50/5.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Jack Rivera</span>
+                                        <span class="message">Tomorrow i need that file...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/2.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">John Smith</span>
+                                        <span class="message">Are you available tomorrow...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="primary" alt="" src="../assets/images/people/50x50/4.jpg" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="time">11:42</span>
+                                        <span class="name">Stephanie Carr</span>
+                                        <span class="message">Hey, How it is going?...</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Sidebar Right -->
+
+                <!-- Style Switcher -->
+        <div id="style_switcher" class="switcher_open hidden-print">
+            <a class="switcher_toggle"><i class="fa fa-cog fa-spin"></i></a>
+            <div class="style_items">
+                <h4><i class="fa fa-adjust fa-fw"></i> Style Color</h4>
+                <ul class="clearfix colors">
+                    <li class="switch-style style_active" data-toggle="tooltip" data-container="body" data-placement="top" title="Default" data-bg-color="#18bc9c" data-link-color="#ffffff" data-border-color="#18bc9c" data-style="default" style="background-color: #18bc9c;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Green" data-bg-color="#5cb85c" data-link-color="#ffffff" data-border-color="#5cb85c" data-style="green" style="background-color: #5cb85c;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Red" data-bg-color="#e96363" data-link-color="#ffffff" data-border-color="#e96363" data-style="red" style="background-color: #e96363;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Blue" data-bg-color="#23bab5" data-link-color="#ffffff" data-border-color="#23bab5" data-style="blue" style="background-color: #23bab5;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Orange" data-bg-color="#e97436" data-link-color="#ffffff" data-border-color="#e97436" data-style="orange" style="background-color: #e97436;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Alice" data-bg-color="#E4F1FE" data-link-color="#444" da data-border-color="#cccccc" data-style="alice" style="background-color: #E4F1FE;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Honey Flower" data-bg-color="#674172" data-link-color="#ffffff" data-border-color="#674172" data-style="honey_flower" style="background-color: #674172;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Razzmatazz" data-bg-color="#DB0A5B" data-link-color="#ffffff" data-border-color="#DB0A5B" data-style="razzmatazz" style="background-color: #DB0A5B;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="White" data-bg-color="#ffffff" data-link-color="#444" da data-border-color="#ccc" data-style="white" style="background-color: #ffffff;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Snuff" data-bg-color="#DCC6E0" data-link-color="#ffffff" data-border-color="#DCC6E0" data-style="snuff" style="background-color: #DCC6E0;"></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="Ming" data-bg-color="#336E7B" data-link-color="#ffffff" data-border-color="#336E7B" data-style="ming" style="background-color: #336E7B;"></li>
+
+                    <!-- Half Styles -->
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Green" data-bg-color="#fff" data-sidebar-color="#5cb85c" data-link-color="#444" data-border-color="#5cb85c" data-style="half_green"><span class="half_style" style="background-color: #5cb85c;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Red" data-bg-color="#fff" data-sidebar-color="#e96363" data-link-color="#444" data-border-color="#e96363" data-style="half_red"><span class="half_style" style="background-color: #e96363;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Blue" data-bg-color="#fff" data-sidebar-color="#23bab5" data-link-color="#444" data-border-color="#23bab5" data-style="half_blue"><span class="half_style" style="background-color: #23bab5;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Orange" data-bg-color="#fff" data-sidebar-color="#e97436" data-link-color="#444" data-border-color="#e97436" data-style="half_orange"><span class="half_style" style="background-color: #e97436;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Alice" data-bg-color="#fff" data-sidebar-color="#E4F1FE" data-link-color="#444" da data-border-color="#cccccc" data-style="half_alice"><span class="half_style" style="background-color: #E4F1FE;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Honey Flower" data-bg-color="#fff" data-sidebar-color="#674172" data-link-color="#444" data-border-color="#674172" data-style="half_honey_flower"><span class="half_style" style="background-color: #674172;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Razzmatazz" data-bg-color="#fff" data-sidebar-color="#DB0A5B" data-link-color="#444" data-border-color="#DB0A5B" data-style="half_razzmatazz"><span class="half_style" style="background-color: #DB0A5B;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Snuff" data-bg-color="#fff" data-sidebar-color="#DCC6E0" data-link-color="#444" data-border-color="#DCC6E0" data-style="half_snuff"><span class="half_style" style="background-color: #DCC6E0;"></span></li>
+                    <li class="switch-style" data-toggle="tooltip" data-container="body" data-placement="top" title="(HALF) Ming" data-bg-color="#fff" data-sidebar-color="#336E7B" data-link-color="#444" data-border-color="#336E7B" data-style="half_ming"><span class="half_style" style="background-color: #336E7B;"></span></li>
+                </ul>
+                <h4><i class="fa fa-cogs fa-fw"></i> Layout Settings</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span>Fixed Navbar</span>
+                        <div class="checkbox checkbox-success checkbox-inline pull-right"><input type="checkbox" class="layout_switch" id="fixed_navbar" checked="checked"><label for="fixed_navbar"></label></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span>Sidebar Fixed Sidebar</span>
+                        <div class="checkbox checkbox-success checkbox-inline pull-right"><input type="checkbox" class="layout_switch" id="fixed_sidebar" checked="checked"><label for="fixed_sidebar"></label></div>
+                    </li>
+                    <li class="list-group-item">
+                        <span>Fixed Footer</span>
+                        <div class="checkbox checkbox-success checkbox-inline pull-right"><input type="checkbox" class="layout_switch" id="fixed_footer"><label for="fixed_footer"></label></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+                <!-- footer -->
+        <footer >
+            <p>&copy; 2015, DefOne - Responsive Admin Template (v1.4.0). Created with <i class="fa fa-heart fa-fw"></i> by <a href="">DefThemes</a></p>
+        </footer>
+                
+    </div>
+    <!-- /#wrapper -->
+    <!-- Core Scripts - Include with every page -->
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+
+    <script src="../assets/js/plugins/jquery-cookie/jquery.cookie.js"></script>
+
+    <script type="text/javascript">
+        var primaryColor = '#303641',
+            dangerColor = '#F22613',
+            successColor = '#2ecc71',
+            warningColor = '#F5AB35',
+            infoColor = '#3498db',
+            inverseColor = '#111',
+            cursorColor = ( $.cookie('cursorColor') ) ? $.cookie('cursorColor') : '#333';
+        
+                $.cookie('dev', false);
+        
+        // Setting URL 
+        var url = '../assets/',
+            time = '1436965415';
+
+        var themeStyle = ( $.cookie('themeStyle') ) ? $.cookie('themeStyle') : 'default';
+        
+        if ( $.cookie('dev') == 'true') {
+            $("#style_color").attr('href', url + 'less/styles/'+themeStyle+'.less?' + time);
+        } else {
+            $("#style_color").attr('href', url + 'css/styles/'+themeStyle+'.css');
+        }
+    </script>
+
+
+    <!-- jQuery easing | Script -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    
+    <!-- Bootstrap minimal -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Sparkline | Script -->
+    <script src="../assets/js/plugins/sparklines/jquery.sparkline.js"></script>
+    <!-- Easy Pie Charts | Script -->
+    <script src="../assets/js/plugins/easy-pie/jquery.easypiechart.min.js"></script>
+    <!-- Date Range Picker | Script -->
+    <script src="../assets/js/plugins/daterangepicker/moment.min.js"></script>
+    <script src="../assets/js/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- BlockUI for reloading panels and widgets -->
+    <script src="../assets/js/plugins/block-ui/jquery.blockui.js"></script>
+
+
+
+    <script src="../assets/js/jquery-ui.custom.min.js"></script>
+    <script src="../assets/js/holder.js"></script>
+    <script src="../assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="../assets/js/plugins/morris/raphael-2.1.0.min.js"></script>
+    
+        <script src="../assets/js/plugins/flot/jquery.flot.js"></script>
+    <script src="../assets/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../assets/js/plugins/flot/jquery.flot.resize.js"></script>
+    
+    
+
+        <script src="../assets/js/plugins/nicescroll/jquery.nicescroll.min.js"></script> 
+
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+        <script type="text/javascript">
+        var load = true;
+        </script>
+    <script src="../assets/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../assets/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../assets/js/demo/maps.js"></script>
+    <script src="../assets/js/demo/widgets.js"></script>
+    
+    
+    
+    <!-- Init Scripts - Include with every page -->
+    <script src="../assets/js/init.js"></script>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48137309-1', 'defthemes.com');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
+
+</html>

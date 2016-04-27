@@ -1,0 +1,215 @@
+@charset"UTF-8";
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+body {
+    overflow: hidden;
+    font-family: "Helvetica Neue", Arial;
+    font-weight: normal;
+    color: #333;
+    font-size: 13px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #4E4E4E;
+}
+header {
+    height: 50px;
+    background: #1f232a;
+    z-index: 9999;
+    width: 100%;
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.2);
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    position: relative;
+}
+.purchase {
+    background: #23bab5;
+}
+.purchase span {float: left;margin-right: 5px}
+.purchase a { color: #ffffff;display:block}
+.logo {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+@media (max-width: 767px) {
+	.logo {
+		display: none!important;
+	}
+}
+.infobar {
+    margin: 0 auto;
+    width: 100%;
+    line-height: 50px;
+    background: #1f232a;
+}
+.infobar > .logo,
+.infobar > .selector,
+.infobar > div.pull-right > .devices,
+.infobar > div.pull-right > .social,
+.infobar > div.pull-right > .purchase,
+.infobar > div.pull-right > .remove-frame {
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding: 0 15px;
+}
+.infobar > div.pull-right > .devices,
+.infobar > div.pull-right > .social {
+    padding: 0;
+}
+.selector {
+    padding: 0!important;
+}
+.social a,
+.devices a {
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #474747;
+}
+.social a i,
+.devices a i,
+.remove-frame i {
+    margin-right: 0;
+    line-height: 50px;
+}
+.infobar > div.pull-right {
+    float: right;
+    padding: 0;
+}
+[class^="fa-"],
+[class*=" fa-"] {
+    margin-right: 5px;
+    float: left;
+}
+.fa-2x { font-size: 1.5em; }
+.current {
+    background: rgba(0, 0, 0, .05);
+    min-width: 100px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    float: left;
+}
+.current.open {
+    background: #fff;
+    color: #888;
+}
+.theme {
+    float: left;
+    margin: 0;
+    padding: 0 15px;
+    color: #fff;
+}
+.current.open .theme {
+    color: #888;
+}
+.arrow {
+    color: #fff;
+    margin-left: 5px;
+    float: right;
+}
+.menu {
+    display: none;
+    width: 180px;
+    background: #fff;
+    border-top: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+}
+.menu a {
+    display: block;
+    height: 40px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #888;
+    line-height: 40px;
+}
+.menu a:hover {
+    color: #555;
+}
+.menu a:hover > .fa {
+    color: #555;
+}
+.menu a span {
+    font-size: 10px;
+    float: right;
+    background: rgb(70, 186, 235);
+    line-height: 10px;
+    padding: 3px;
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+iframe {
+    width: 100%;
+    height: 100%
+}
+.showcase {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: auto;
+}
+.showcase,
+.showcase.desktop {
+    height: 100%;
+}
+.showcase.tablet {
+    width: 768px;
+    left: 50%;
+    margin-left: -384px;
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.showcase.mobile {
+    left: 50%;
+    margin-left: -210px;
+    width: 420px;
+    margin-top: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
